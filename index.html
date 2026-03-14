@@ -3,60 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OMNIX Download</title>
+<title>OMNIX — App Download</title>
 <style>
-body {
-    font-family: Arial, sans-serif;
-    background: #0b0e11;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-h1 {
-    color: #d4af37;
-}
-p {
-    font-size: 18px;
-    margin: 10px 0 20px 0;
-}
-img {
-    max-width: 300px;
-    margin: 10px;
-    border-radius: 12px;
-}
-button {
-    padding: 12px 20px;
-    background: #22c55e;
-    color: #000;
-    border: none;
-    border-radius: 10px;
-    font-weight: 800;
-    cursor: pointer;
-    margin-top: 20px;
-    font-size: 16px;
-    transition: 0.3s;
-}
-button:hover {
-    background: #16a34a;
-}
+  body {
+    margin:0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background:#f5f5f5;
+    color:#202124;
+  }
+  header {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:16px;
+    background:#fff;
+    box-shadow:0 1px 3px rgba(0,0,0,0.1);
+  }
+  header img {
+    width:64px;
+    height:64px;
+    border-radius:12px;
+  }
+  header div {
+    display:flex;
+    flex-direction:column;
+  }
+  header h1 {
+    margin:0;
+    font-size:22px;
+    font-weight:500;
+  }
+  header span {
+    font-size:14px;
+    color:#5f6368;
+  }
+  .download-btn {
+    margin-top:12px;
+    padding:12px 20px;
+    background:#1a73e8;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-weight:600;
+    font-size:16px;
+    cursor:pointer;
+    text-decoration:none;
+    display:inline-block;
+  }
+  main {
+    max-width:800px;
+    margin:20px auto;
+    padding:0 16px;
+  }
+  .rating {
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin:12px 0;
+    font-size:14px;
+    color:#fbbc04;
+  }
+  .description {
+    margin:16px 0;
+    font-size:15px;
+    line-height:1.6;
+  }
+  .screenshots {
+    display:flex;
+    overflow-x:auto;
+    gap:12px;
+    padding:12px 0;
+  }
+  .screenshots img {
+    max-height:500px;
+    border-radius:12px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+  }
+  .features {
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+    margin:16px 0;
+  }
+  .feature {
+    flex:1 1 45%;
+    background:#fff;
+    padding:12px;
+    border-radius:10px;
+    box-shadow:0 1px 3px rgba(0,0,0,0.1);
+    text-align:center;
+  }
+  .feature h3 {
+    margin:8px 0 4px;
+    font-size:16px;
+    color:#1a73e8;
+  }
+  .feature p {
+    font-size:14px;
+    color:#5f6368;
+  }
+  footer {
+    text-align:center;
+    padding:16px;
+    font-size:13px;
+    color:#5f6368;
+  }
 </style>
 </head>
 <body>
 
-<h1>Download OMNIX App</h1>
-<p>OMNIX is the fastest way to send, receive, and trade coins instantly!</p>
+<header>
+  <img src="Screenshot_20260314_173749.jpg" alt="OMNIX Icon">
+  <div>
+    <h1>OMNIX</h1>
+    <span>By OMNIX Digital</span>
+    <a class="download-btn" href="https://apk.e-droid.net/apk/app3747328-635yjx.apk?v=5">Install</a>
+  </div>
+</header>
 
-<!-- Screenshots -->
-<img src="Screenshot_20260314_173749.jpg" alt="Screenshot 1">
-<img src="Screenshot_20260314_173825.jpg" alt="Screenshot 2">
-<img src="Screenshot_20260314_173908.jpg" alt="Screenshot 3">
-<img src="Screenshot_20260314_173919.jpg" alt="Screenshot 4">
-<img src="Screenshot_20260314_174025.jpg" alt="Screenshot 5">
+<main>
+  <div class="rating">⭐ ⭐ ⭐ ⭐ ☆ 4.0</div>
 
-<!-- Download button -->
-<a href="https://apk.e-droid.net/apk/app3747328-635yjx.apk?v=5" target="_blank">
-    <button>Download OMNIX</button>
-</a>
+  <div class="description">
+    OMNIX is a digital coin platform where users can:
+    <ul>
+      <li>Send coins to other users instantly</li>
+      <li>Receive coins securely</li>
+      <li>Check balance anytime</li>
+      <li>View transaction history</li>
+      <li>Benefit from coin rate updates</li>
+    </ul>
+    The coin value rises automatically based on platform activity, so just holding OMNIX is enough. Invite friends to help grow the network and increase coin value faster!
+  </div>
+
+  <div class="screenshots">
+    <img src="Screenshot_20260314_173749.jpg" alt="Screenshot 1">
+    <img src="Screenshot_20260314_173825.jpg" alt="Screenshot 2">
+    <img src="Screenshot_20260314_173908.jpg" alt="Screenshot 3">
+    <img src="Screenshot_20260314_173919.jpg" alt="Screenshot 4">
+    <img src="Screenshot_20260314_174025.jpg" alt="Screenshot 5">
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <h3>Fast</h3>
+      <p>Instant transactions between users</p>
+    </div>
+    <div class="feature">
+      <h3>Secure</h3>
+      <p>Your coins are safe with real-time encryption</p>
+    </div>
+    <div class="feature">
+      <h3>Simple</h3>
+      <p>Easy to send, receive, and track coins</p>
+    </div>
+    <div class="feature">
+      <h3>Growing Value</h3>
+      <p>Invite friends to increase coin circulation</p>
+    </div>
+  </div>
+
+  <a class="download-btn" href="https://apk.e-droid.net/apk/app3747328-635yjx.apk?v=5">Install OMNIX</a>
+</main>
+
+<footer>
+  &copy; 2026 OMNIX Digital. All rights reserved.
+</footer>
 
 </body>
-  </html>
+    </html>
